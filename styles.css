@@ -1,0 +1,162 @@
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+em{
+    font-size: 13.28px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    max-width: 840px;
+    margin: 1% auto;
+    background-color: #d2e6fd;
+}
+
+.container > div{
+    margin: 20px auto;
+}
+
+.intro{
+    text-align: center;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 2px 8px 8px rgba(17, 20, 206, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.profile-picture:hover {
+    box-shadow: 0 2px 24px 24px rgba(17, 20, 206, 0.16);
+}
+
+.project-image{
+    width: 300px;
+    height: 300px;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.i-am, .i-like{
+    text-align:center;
+    text-decoration: none;
+}
+
+.about-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about{
+    padding: 0;
+    font-size: 15px;
+    width: 300px;
+}
+
+@media (max-width: 650px){
+    .about-grid{
+        grid-template-columns: 100%;
+    }
+}
+
+.projects-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px
+    
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+
+.project-image-wrapper{
+    position: relative;
+    justify-self: center;
+    padding: 4%   
+}
+
+@media (max-width: 650px){
+    .projects-grid{
+        grid-template-columns: 100%
+    }
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-element{
+    justify-self: center;
+}
+
+.form{
+    text-align: center;
+}
+
+form input[type="submit"]{
+    width: 317px;
+    margin-top: 10px;
+}
+
+form input, textarea{
+    border-radius: 5px;
+}
+
+@media (max-width: 650px){
+    .form-grid{
+        grid-template-columns: 100%
+    }
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+}
+
+.project-image{
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.project-image:hover{
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+.project-image-wrapper:hover > h4{
+    visibility: visible;
+}
+
+.project-image-wrapper > h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+#email{
+
+    width: 309px;
+}
